@@ -14,4 +14,8 @@ impl Converter for RomanToKanjiConverter {
             | FELANG_CMODE_NOINVISIBLECHAR
             | FELANG_CMODE_PRECONV)
     }
+
+    fn name(&self) -> String {
+        "roman_to_kanji".to_string()
+    }
 }

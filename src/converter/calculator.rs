@@ -14,4 +14,8 @@ impl Converter for CalculatorConverter {
 
         Ok(result)
     }
+
+    fn name(&self) -> String {
+        "calculator".to_string()
+    }
 }

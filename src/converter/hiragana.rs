@@ -12,4 +12,8 @@ impl Converter for HiraganaConverter {
         let felanguage = FElanguage::new()?;
         felanguage.j_morph_result(text, FELANG_REQ_REV, FELANG_CMODE_HIRAGANAOUT | FELANG_CMODE_PRECONV | FELANG_CMODE_NOINVISIBLECHAR)
     }
+
+    fn name(&self) -> String {
+        "hiragana".to_string()
+    }
 }
